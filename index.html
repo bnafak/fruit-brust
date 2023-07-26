@@ -13,8 +13,7 @@
 
 <body>
     <header>
-        <nav class="flex rounded-md justify-evenly p-5 h-20 bg-red-600 my-5">
-
+        <nav class="flex rounded-full justify-evenly p-5 h-20 bg-red-600 my-5">
             <div class="flex w-1/3 text-white gap-8">
                 <a href="">Home</a>
                 <a href="">About Us</a>
@@ -26,31 +25,31 @@
                 <img src="images/logo.png" alt="">
                 <a class="text-3xl font-extrabold" gap-20 href="">Fruit Brust</a>
             </div>
-            <div class="flex rounded-md bg-white w-1/3">
-                <div class=" p-2">
+            <div class="flex rounded-full  bg-white justify-items-end w-1/3">
+                <div class="p-2 ">
                     <input type="text" placeholder="Search">
                     <a href=""><i class="fa-solid fa-magnifying-glass text-black"></i></a>
                 </div>
             </div>
         </nav>
 
-        <!-- slider part  -->
+        <!-- slider part ----/ carousol   -->
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="images/banner1.png" class="w-full" />
-
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-
-
                     <a href="#slide4" class="btn btn-circle">❮</a>
-                    <div>
-                        <h1 class="text-3xl text-white text-center">
-                            Exotic tastes at your doorstep</h1>
-                        <p class="3xl my-10 text-white">We supply highly quality organic products</p>
-                        <button class="btn btn-primary bg-red text-center">Shop Now</button>
+
+                    <div class="justify-center">
+                        <h1 class="text-3xl font-semibold text-center text-red-50">
+                            Exotic tastes at your <br> doorstep</h1>
+                        <p class="xl my-10 font-bold text-white text-center">We supply highly quality organic products</p>
+                        <div class="content-center">
+                            <button class="btn bg-red-600 border-none text-white">Shop Now</button>
+                        </div>
+                        
                     </div>
                     <a href="#slide2" class="btn btn-circle">❯</a>
-
                 </div>
             </div>
             <div id="slide2" class="carousel-item relative w-full">
@@ -75,14 +74,12 @@
                 </div>
             </div>
         </div>
-
-
     </header>
 
     <main>
 
         <!-- ------------------stobery-to-Mango --------------------- -->
-        <section class="flex items-center">
+        <section class="flex -mt-50 items-center">
             <div class="card w-30">
                 <figure class="px-10 pt-10">
                     <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -97,7 +94,7 @@
                     <img src="images/fruit2.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">Strawberry</h2>
+                    <h2 class="card-title">Orange</h2>
                 </div>
             </div>
 
@@ -106,7 +103,7 @@
                     <img src="images/fruit3.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">Strawberry</h2>
+                    <h2 class="card-title">Mango</h2>
                 </div>
             </div>
 
@@ -116,6 +113,14 @@
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">Strawberry</h2>
+                </div>
+            </div>
+            <div class="card card w-30">
+                <figure class="px-10 pt-10">
+                    <img src="images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Mango</h2>
                 </div>
             </div>
         </section>
@@ -214,25 +219,58 @@
         <!-- ---------------------------Meet the team section ------------------------ -->
         <section>
             <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                    <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-                        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece
-                            of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-
-                        <div class="border-2">
-                            <img src="images/member1.png" alt="">
-                            <h3>Awlad Hossain</h3>
-                            <p>Fruits Expert</p>
-                            <button>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </button>
+                <div class="hero-overlay bg-opacity-60">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                            <div class="meet-container flex">
+                                <div class="border-2 w-auto">
+                                    <img src="images/member1.png" alt="">
+                                    <h3>Awlad Hossain</h3>
+                                    <p>Fruits Expert</p>
+                                    <button class="gap-10">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </button>
+                                </div>
+                                <div class="border-2 w-auto">
+                                    <img src="images/member1.png" alt="">
+                                    <h3>Awlad Hossain</h3>
+                                    <p>Fruits Expert</p>
+                                    <button class="gap-10">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </button>
+                                </div>
+                                <div class="border-2 w-auto">
+                                    <img src="images/member1.png" alt="">
+                                    <h3>Awlad Hossain</h3>
+                                    <p>Fruits Expert</p>
+                                    <button class="gap-10">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </button>
+                                </div>
+                                <div class="border-2 w-auto">
+                                    <img src="images/member1.png" alt="">
+                                    <h3>Awlad Hossain</h3>
+                                    <p>Fruits Expert</p>
+                                    <button class="gap-10">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -243,13 +281,13 @@
                 Latin literature from 45 BC, making it over 2000 years old.</p>
         </section>
         <!-- ---------------------- table ------------------------ -->
-        <section class="flex">
+        <section class="flex my-5">
             <!-- -----------------------my-choose-left--------------- -->
             <div class="left-container">
                 <div class="overflow-x-auto">
                     <table class="table">
                         <tbody>
-                              <tr>
+                            <tr>
                                 <td>
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
@@ -271,7 +309,7 @@
                 <div class="overflow-x-auto">
                     <table class="table">
                         <tbody>
-                              <tr>
+                            <tr>
                                 <td>
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
@@ -293,7 +331,7 @@
                 <div class="overflow-x-auto">
                     <table class="table">
                         <tbody>
-                              <tr>
+                            <tr>
                                 <td>
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
@@ -337,7 +375,8 @@
                                             </div>
                                             <div>
                                                 <div class="font-bold">Dedicated Team</div>
-                                                <div class="text-sm opacity-50">Professional employees are there for you to
+                                                <div class="text-sm opacity-50">Professional employees are there for you
+                                                    to
                                                     pick the most amazing and fresh fruits.</div>
                                             </div>
                                         </div>
@@ -361,7 +400,8 @@
                                             </div>
                                             <div>
                                                 <div class="font-bold">Dedicated Team</div>
-                                                <div class="text-sm opacity-50">Professional employees are there for you to
+                                                <div class="text-sm opacity-50">Professional employees are there for you
+                                                    to
                                                     pick the most amazing and fresh fruits.</div>
                                             </div>
                                         </div>
@@ -385,7 +425,8 @@
                                             </div>
                                             <div>
                                                 <div class="font-bold">Dedicated Team</div>
-                                                <div class="text-sm opacity-50">Professional employees are there for you to
+                                                <div class="text-sm opacity-50">Professional employees are there for you
+                                                    to
                                                     pick the most amazing and fresh fruits.</div>
                                             </div>
                                         </div>
@@ -394,11 +435,9 @@
                                 </tfoot>
                         </table>
                     </div>
-            </div>
+                </div>
         </section>
-
     </main>
-
 
     <footer>
         <footer class="footer footer-center my-15 p-10 bg-black text-white">
