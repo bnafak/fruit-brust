@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,75 @@
     <script src="https://kit.fontawesome.com/98cebaf8dc.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-<header>
-    <div> 
-        <li></li>
-        <li></li>
-        <li></li>
-    </div>
-    
-    <div>
-        <li><a href=""></a></li>
-    </div>
 
-    <div>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-       
-    </div>
-</header>
-    
+<body>
+    <header>
+        <nav class="max-w-screen flex rounded-md justify-evenly h-30 bg-red-300 mt-10">
+            <div class="flex  text-white gap-8">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Shop</a>
+                <a href="">All Fruits</a>
+            </div>
+
+            <div class="fex text-white gap-10">
+                <div><img src="images/logo.png" alt="">
+                    <a href="">Fruit Brust</a>
+                </div>
+            </div>
+
+            <div class="flex rounded-xl bg-white justify-evenly">
+                <div class="text-xl p-4">
+                    <input type="text" placeholder="Search">
+                    <a href=""><i class="fa-solid fa-magnifying-glass text-black"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banner section  -->
+        <section>
+            <div class="mt-5 carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="images/banner1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="images/banner2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="images/banner3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
+            
+            <div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <footer></footer>
+
 </body>
+
 </html>
